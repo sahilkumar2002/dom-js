@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecting Element</title>
+</head>
+<body>
+
+    <!-- <div>
+        <input type="radio" name="language" value="JS">
+        <input type="radio" name="language" value="Python">
+    </div>
+<script>
+    let btn=document.getElementsByName("language");
+    console.log(btn);
+    
+</script> -->
+
+
+
+<div>
+    <input type="radio" name="color" value="Red">
+    <input type="radio" name="color" value="Blue">
+    <input type="radio" name="color" value="Green">
+</div>
+<script>
+    let radios = document.getElementsByName("color"); // Select all radio buttons with name="color"
+    console.log(radios); // Logs a NodeList of radio buttons
+
+    // Check which one is selected
+    radios.forEach((radio) => {
+        if (radio.checked) {
+            console.log(`Selected color: ${radio.value}`);
+        }
+    });
+</script>
+
+
+
+
+
+
+
+
+<!-- /*=====================  getElementsByTagName()   ====================*/ -->
+ <!-- the getElementsByTagName() method accepts a tag name and returs a live HTMLColletion of elements.
+ <h1> first heading </h1>
+<h1> second heading</h1>
+<h1> third heading</h1>
+<h1> fourth heading</h1>
+<script>
+   let the=  document.getElementsByTagName('h1');
+    console.log(the);
+</script> -->
+
+
+<!-- the getElementByClassName() method return an array-like of objects  of the child elements with a specified class name.-->
+<!-- <div>
+    <h1>first heading</h1>
+    <div id="container">
+            <h1 class="message">second heading</h1>
+            <h1 class="message">third heading</h1>
+            <h1 class="message">third heading</h1>
+    </div>
+</div>
+
+<script>
+    let cont =document.getElementById('container');
+    let mgs=cont.getElementsByClassName('message');
+    console.log(mgs);
+</script> -->
+
+
+
+<!-- 
+ The querySelector()method allows you to select the first element that matches one or more CSS selectors.
+  -->
+
+
+<!-- <h1 class="message">message</h1>
+<div id ="container">
+<h1 class="message">first Heading</h1>
+<h1 class="message">second heading</h1>
+<h1 class="message">third heading</h1>
+</div>
+
+<script>
+   // let msg=document.querySelectorAll(".message");
+    //let msg =document.querySelectorAll("#container");
+    let msg =document.querySelectorAll(" div, h1");
+    console.log(msg);
+</script> -->
+
+
+
+</body>
+</html>

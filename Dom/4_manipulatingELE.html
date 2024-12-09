@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+     <!-- ====================== 1.uncomment this ========================================================================-->
+<!-- ========================manupilating Elements =======================-->
+<!-- ===============1.createElement()method==========
+ To create an html element, we use the  createElement()method
+  The document.createElement() accept an HTML tag name and returns a new Node with the Element type. -->
+ <!-- <script>
+     let div =document.createElement('div');
+     div.innerHTML="<p> welcome in gss studios</p>";
+   // we can add this element in body using appendChild method
+     document.body.appendChild(div);
+    //  we can give id and class also
+    //  div.id="title";
+    //  div.className="title";
+   
+     console.log(div);
+  </script> 
+  -->
+   <!-- ====================================================================================================================== -->
+
+
+    <!-- ====================== 2.uncomment this ============================================================================== -->
+
+  <!-- ===========02.appendChild()method================
+  1.we use appendChild()method to add a node to the end of the list of child nodes of a specified parent node.
+  2.the appendChild() can be used to move an existng child node to the new position with in the document.
+   -->
+
+   <ul id="menu">
+        <li>Home</li>
+        <li>about</li>
+        <li>blog</li>
+        <li style="display: none;">project</li>
+   </ul>
+        <!-- <script>
+            let menu =document.getElementById('menu');
+            let list =document.createElement('li');
+            list.innerHTML="content";
+
+            menu.appendChild(list);
+        </script> -->
+<!-- ============================================================================================================================ -->
+
+
+
+ <!-- ====================== 3.uncomment this ================================ -->
+<!--===============03.textContent================= 
+ To Get the text content of a node and its descendants, you use the textContent property.
+-->
+<script>
+    // let menu=document.getElementById("menu");
+    // console.log(menu.textContent);
+    //console.log(menu.innerText) ;//innerText use css style also 
+    //if we use only text content the  the all content is visible in console
+//   Home
+//   about
+//   blog 
+//   content 
+//    but in the console 
+//    Home 
+//    about 
+//    blog 
+//    content 
+//    project
+ //     03.we can insert also
+//  menu.textContent="Hello!"; 
+
+/*============================================*/
+
+/* <!-- ====================== 4.uncomment this ================================ -->
+// ============= 04.innerHTML ==================
+// menu.innerHTML="<h1>hello</h1>";
+// op->hello
+// menu.textContent="<h1>hello</h1>";
+//op-><h1>hello</h1>
+</script>
+ <!-- ===================================================================== -->
+
+
+  <!-- ====================== 5.uncomment this ================================ -->
+<!-- ================5.after()method ============-->
+<!-- we can use after()method  to insert one or more nodes after the element. -->
+<!-- <ul id ="music">
+    <li>Rock</li>
+    <li>metal</li>
+    <li>slow</li>
+    <li>Romance</li>
+</ul> -->
+
+<!-- <script>
+    let music=document.getElementById("music");
+    music.after(node1,node2,...nodeN);
+    music.after(str1,str2,...strN);
+</script> -->
+
+ <!-- ====================================================== -->
+
+
+
+
+
+  <!-- ====================== 6.uncomment this ================================ -->
+<!--============== 6.append()Method ====================-->
+<!-- <script>
+//     let menu=document.getElementById("menu");
+//     parentNode.append(newNodes);
+// newnode will be added end of the list of childs
+quesition what will different b/w append and appendChild
+the append is accept multiple nodes  and  add string also
+// </script> -->
+
+ <!-- ====================================================== -->
+
+  <!-- ====================== 7.uncomment this ================================ -->
+<!--================ 7.prepend() Method===============-->
+<!-- //let menu=document.getElementById("menu");
+//     parentNode.prepend(newNodes);
+add the new node in the first child in parent node 
+  ====================== ================================  
+
+
+
+
+    ====================== 8.uncomment this ================================ 
+===================== 8.insertAdjacentHTML()method=========
+
+element.insertAdjacentHTML(positionName.text);
+for ex-->
+<script>
+    // let menu=document.getElementById("menu");
+    //  menu.insertAdjacentHTML("beforeend","<li>contact</li>");
+   // op--> Home
+   //about
+   //blog
+   //contact
+//    menu.insertAdjacentHTML("afterbegin","<li>contact</li>");
+//op -->contact 
+//Home
+//about
+//blog
+</script>
+ <!-- ====================================================== -->
+
+
+<!-- ======================9.replaceChild()============-->
+<!-- <script>
+    //replace the child with new one 
+// let menu =document.getElementsById("menu");
+// parentNode.replaceChild(newChild,oldchild);
+
+</script> -->
+
+<!--==============10.clonenode()method==============-->
+<!-- to clone an element
+ let menu =document.getElementById("menu");
+ let newNode = originalNode.cloneNode(); -->
+
+
+ <!-- <script>
+    let menu= document.getElementById("menu");
+    // let newNode =menu.cloneNode();//by default false
+    let newNode =menu.cloneNode(true);
+    console.log(newNode);
+
+ </script> -->
+
+<!--============ 11.removeChild()method =========-->
+<script>
+    let menu=document.getElementById("menu");
+    // parentNode.removeChild(childNode);
+     
+     menu.removeChild(menu.lastElementChild);
+     menu.removeChild(menu.firstElementChild);
+     //remove the last child element project 
+</script>
+
+<!--================== 12.insertBefore() method===========-->
+ <!-- we can use insertBefore() method to insert a new node 
+  before an existing node as a childNode of a parent node. -->
+   
+  <!-- <script>
+    let menu =document.getElementById("menu");
+    menu.insertBefore(newNode,menu.firstElementChild);
+  </script> -->
+
+
+</body>
+</html>
+
+

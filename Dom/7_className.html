@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class  Name property</title>
+</head>
+<body>
+   
+    <h1 id="title" class="message main">gss studios</h1>
+   
+    <script>
+        let title=document.getElementById("title");
+       // title.className="sahil";// this method overright the previous classes so can use continate using +=
+        //title.className +=" sahil";
+        //console.log(title.className);
+       //console.log(title);
+       
+        //console.log(title.classList);
+        
+    //============2.classList property ================
+     //returning the collection of classes availabel in any html element
+    //   console.log(title.classList);
+   //->mutiple classes can add using
+    //title.classList.add("new","first","second","third");
+    // title.classList.add("new");
+    // console.log(title);
+    //title.classList.remove("message");
+    //to remove multiple classes using this method 
+   // title.classList.remove("new","first","main","second");
+    //title.classList.replace("third","kala");
+    //title.classList.contains("kala");//it gives answer true or false
+    // console.log(title.classList.contains("kala")); //false
+    // console.log(title.classList.contains("message"));//true    
+
+
+    //============toggle =======
+    //if the class name is present already then it will remove it if its available its added the calls name
+    title.classList.toggle("message");
+    title.classList.toggle("hero");
+    console.log(title);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+     <!-- ====================== 1.uncomment this ================================ -->
+   <!-- To get the parent node of a specfied node in the DOM tree,
+   we can use the parentNode property. -->
+   <!-- <div class="title">
+    <p class="text">hello welocme in gss studios</p>
+   </div> 
+   <script>
+    let txt=document.querySelector(".text");
+    console.log(txt.parentNode);
+   </script> -->
+   <!--================================================================================-->
+
+
+   <!-- ====================== 2.uncomment this ================================ -->
+<!--Getting Child Elements of a Node in JavaScript-->
+
+<!-- 
+<div class="title">
+    <p> welcome in gss studios 1 </p>
+    <p> welcome in gss studios 2</p>
+    <p> welcome in gss studios 3</p>
+    <p> welcome in gss studios 4</p>
+</div>
+<script>
+    let  parent=document.querySelector(".title");
+    //  console.log(parent.firstChild);
+    //  console.log(parent.firstElementChild);
+     console.log(parent.lastElementChild);
+     console.log(parent.childNodes);
+// op->NodeList(5) [p, p, p, p, text]
+</script> -->
+<!-- ====================================================== -->
+
+
+
+
+<!-- ====================== 3.uncomment this ================================ -->
+<!-- <div class="title"><p> welcome in gss studios 1 </p>
+    <p> welcome in gss studios 2</p>
+    <p> welcome in gss studios 3</p>
+    <p> welcome in gss studios 4</p>
+</div>
+<script>
+    let  parent1=document.querySelector(".title");
+    //  console.log(parent.firstChild);
+    //  console.log(parent.firstElementChild);
+     console.log(parent1.lastElementChild);
+     console.log(parent1.childNodes);
+// op->traversingELE.html:45 NodeList(8) [p, text, p, text, p, text, p, text]
+</script> -->
+<!-- ====================================================== -->
+
+
+
+
+
+<!-- ====================== 4.uncomment this ================================ -->
+<!-- selete the next sibling ,previous sibling of an element -->
+
+<!-- <div class="title">
+    <p>welcome to gss studios 1</p>
+    <p class="second">welcome to gss studios 2</p>
+    <p>welcome to gss studios 3</p>
+
+</div>
+<script>
+    let second =document.querySelector(".second");
+    console.log(second.previousElementSibling);
+</script> 
+
+op-><p>welcome to gss studios 1</p>   
+-->
+
+
+<!-- <div class="title">
+    <p>welcome to gss studios 1</p>
+    <p class="second">welcome to gss studios 2</p>
+    <p>welcome to gss studios 3</p>
+
+</div>
+<script>
+    let second =document.querySelector(".second");
+    console.log(second.nextElementSibling);
+</script> -->
+<!--op <p>welcome to gss studios 3</p> -->
+<!-- ====================================================== -->
+
+
+ <!-- ==========================  end      ============================ -->
+
+
+</body>
+</html>
